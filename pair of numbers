@@ -1,0 +1,13 @@
+def find_pairs_of_numbers(num_list,n):
+    count=0
+    for i in range(len(num_list)):
+        k=i+1
+        
+        for j in range(k,len(num_list)):
+            if(num_list[i]+num_list[j]==n):
+                count+=1
+    return count
+
+num_list=[1, 2, 7, 4, 5, 6, 0, 3]
+n=6
+print(find_pairs_of_numbers(num_list,n))
